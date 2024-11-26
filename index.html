@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="col-12">
+      <nav class="navbar bg-body-tertiary px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <i class="fa-brands fa-instagram"></i>
+            Instagram
+          </a>
+          <div class="d-flex me-5">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a new post
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Caption:</p>
+
+                    <textarea class="form-control" placeholder="Add the caption of your post here!"
+                      id="floatingTextarea2" style="height: 100px"></textarea>
+
+                    <button type="button" class="btn btn-outline-secondary mt-2">
+                      <i class="fa-solid fa-camera"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary mt-2">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </button>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown mx-1">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="nav nav-tabs mt-2 d-flex justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+          <i class="fa-solid fa-table-cells"></i>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+          <i class="fa-solid fa-square"></i>
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active my-1" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-4 my-1">
+              <img style="width: 100%;" src="https://media.istockphoto.com/id/1368424494/es/foto/retrato-de-estudio-de-una-mujer-alegre.jpg?s=2048x2048&w=is&k=20&c=73My0RGWxiVuGd2SdrGIItdB_R87kZvZQViwrgsRY9w=" alt="">
+            </div>
+            <div class="col-4 my-1">
+              <img style="width: 100%;" src="https://media.istockphoto.com/id/1386479313/es/foto/feliz-mujer-de-negocios-afroamericana-millennial-posando-aislada-en-blanco.jpg?s=612x612&w=0&k=20&c=JP0NBxlxG2-bdpTRPlTXBbX13zkNj0mR5g1KoOdbtO4=" alt="">
+            </div>
+            <div class="col-4 my-1">
+              <img style="width: 100%;" src="https://media.istockphoto.com/id/938709362/es/foto/retrato-de-una-chica.jpg?s=612x612&w=0&k=20&c=jn6oRRnAPeZVDAs1PvuZxmMLa5r4TnDvvVCz7hi7ylM=" alt="">
+            </div>
+            <div class="col-4 my-1">
+              <img style="width: 100%;" src="https://media.istockphoto.com/id/1129342275/es/foto/disfrutando-de-su-m%C3%BAsica-favorita.jpg?s=612x612&w=0&k=20&c=4ceRl9gFvHDXBLvWkOfeLSjvjPvtMQ7LjHRf8w8Ngwg=" alt="">
+            </div>
+            <div class="col-4 my-1">
+              <img style="width: 100%;" src="https://media.istockphoto.com/id/1437816897/es/foto/mujer-de-negocios-gerente-o-retrato-de-recursos-humanos-para-el-%C3%A9xito-profesional-la-empresa.jpg?s=612x612&w=0&k=20&c=UUQMt4QvYIlD3OUT_Q81nZLTML6vb5X5bwMLjznVNuk=" alt="">
+            </div>
+            <div class="col-4 my-1">
+              <img style="width: 100%;" src="https://media.istockphoto.com/id/1300972574/es/foto/l%C3%ADder-de-equipo-masculino-millennial-organiza-taller-virtual-con-empleados-en-l%C3%ADnea.jpg?s=612x612&w=0&k=20&c=SWvvszsskWnHXCWq_g6S85iAPYt9rulJP2RPmcn4o0A=" alt="">
+            </div>
+            <div class="col-4 my-1">
+              <img style="width: 100%;" src="https://media.istockphoto.com/id/1303206630/es/foto/retrato-de-una-sonriente-empresaria-cauc%C3%A1sica-posa-en-el-cargo.jpg?s=612x612&w=0&k=20&c=4LwSPQURf6sMuY0YTlZejifRzgx-7ntilcMUBM11ajM=" alt="">
+            </div>
+            <div class="col-4 my-1">
+              <img style="width: 100%;" src="https://media.istockphoto.com/id/643897728/es/foto/mujer-usando-su-computadora-port%C3%A1til.jpg?s=612x612&w=0&k=20&c=WtbV-UPooM27CHZNAvs77jk8oPH4nQAiKVtmOQtNa5I=" alt="">
+            </div>
+            <div class="col-4 my-1">
+              <img style="width: 100%;" src="https://media.istockphoto.com/id/1411155612/es/foto/perfil-lateral-de-una-hermosa-joven-negra-pensando-y-luciendo-poderosa-de-pie-sobre-un-fondo.jpg?s=612x612&w=0&k=20&c=-pjbhxxvZuNubc_tSTPylUwpFV8cVu0kTisutgt7rAc=" alt="">
+            </div>
+         </div> 
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+      <div class="d-flex flex-column">
+        <div class="d-flex justify-content-center">
+          <div class="card my-2" style="width: 60rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item ">
+                <div class="d-flex justify-content-between">
+                  <h4>My Crazy First Time Tasting This!</h4>
+                  <p class="text-secondary">11/15</p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/e05f0448123233.588f863d6ed18.jpg"
+                class="img-fluid mt-0" alt="">
+              </li>
+
+              <li class="list-group-item">
+                <p><b>204 Likes</b></p>
+                <p>This is a "Jalapeño" and is hot as f** men :v. I wish you enjoy it!</p>
+              </li>
+            </ul>
+          </div> 
+        </div>  
+      </div>
+      <div class="d-flex flex-column">
+        <div class="d-flex justify-content-center">
+          <div class="card my-2" style="width: 60rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item ">
+                <div class="d-flex justify-content-between">
+                  <h4>This are my babys :3</h4>
+                  <p class="text-secondary">12/18</p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <img src="https://perronalidad.com.co/wp-content/uploads/2023/09/DSC05651-1638x2048.jpg"
+                class="img-fluid mt-0" alt="">
+              </li>
+
+              <li class="list-group-item">
+                <p><b>320 Likes</b></p>
+                <p>Meet to Juicy, Candy and Rose, My little 3 babys, all the best moments of my life have been next to this angels.</p>
+              </li>
+            </ul>
+          </div> 
+        </div>  
+      </div>
+      <div class="d-flex flex-column">
+        <div class="d-flex justify-content-center">
+          <div class="card my-2" style="width: 60rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item ">
+                <div class="d-flex justify-content-between">
+                  <h4>Enjoying my favorite sport.</h4>
+                  <p class="text-secondary">12/22</p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <img src="https://phantom-marca-us.unidadeditorial.es/9d73cc4036785f477eeeba67045cb23b/resize/1200/f/webp/assets/multimedia/imagenes/2022/03/23/16480580073630.jpg"
+                class="img-fluid mt-0" alt="">
+              </li>
+
+              <li class="list-group-item">
+                <p><b>150 Likes</b></p>
+                <p>Since I walk, this is all running in my heart. Thinking in how many time loving this game. >< </p>
+              </li>
+            </ul>
+          </div> 
+        </div>  
+      </div>
+
+    </div>
+  </div>    
+  <script src="https://kit.fontawesome.com/0e366ce833.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
